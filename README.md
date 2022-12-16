@@ -1,5 +1,5 @@
 <p align="center"> forked from bastienwirtz/homer --> https://github.com/bastienwirtz/homer
-Manny thanks <3 <p>
+Many thanks <3 <p>
 
 <h1 align="center">
 Homer
