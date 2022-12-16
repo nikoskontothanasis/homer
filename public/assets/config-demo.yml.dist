@@ -72,7 +72,7 @@ services:
       - name: "Pi-hole"
         logo: "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/pihole.png"
         url: "https://pi-hole.net/"
-        endpoint: "https://homer-demo-content.netlify.app/pihole"
+        endpoint: "http://mac-mini.local:8199/admin/"
         type: "PiHole"
       - name: "Proxmox - Node1"
         logo: "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/proxmox.png"
