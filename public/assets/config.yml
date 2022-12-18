@@ -1,0 +1,101 @@
+---
+# Homepage configuration
+# See https://fontawesome.com/v5/search for icons options
+
+title: "Dashboard"
+subtitle: "Local"
+#logo: "logo.png"
+icon: "fas fa-terminal"
+
+header: true
+footer: '<p align="center"><img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/footers/gray0_ctp_on_line.svg?sanitize=true" /></p>' # set false if you want to hide it.
+connectivityCheck: true
+columns: "auto"
+defaults:
+  layout: columns # Either 'columns', or 'list'
+  colorTheme: light 
+# Optional theme customization
+theme:
+colors:
+  light:
+    highlight-primary: "#313244"
+    highlight-secondary: "#1e1e2e"
+    highlight-hover: "#179299"
+    background: "#eff1f5"
+    card-background: "#acb0be"
+    text: "#363636"
+    text-header: "#ffffff"
+    text-title: "#179299"
+    text-subtitle: "#424242"
+    card-shadow: rgba(0, 0, 0, 0.1)
+    link: "#d20f39"
+    link-hover: "#d20f39"
+  dark:
+    highlight-primary: "#363a4f"
+    highlight-secondary: "#626880"
+    highlight-hover: "#ca9ee6"
+    background: "#303446"
+    card-background: "#626880"
+    text: "#c6d0f5"
+    text-header: "#ffffff"
+    text-title: "#fafafa"
+    text-subtitle: "#f5f5f5"
+    card-shadow: rgba(0, 0, 0, 0.4)
+    link: "#3273dc"
+    link-hover: "#ffdd57"
+
+# Optional message
+message:
+  title: "Welcome $HOME 👋 "  
+  
+# Optional navbar
+# links: [] # Allows for navbar (dark mode, layout, and search) without any links
+links:
+  - name: "Git"
+    icon: "fab fa-github"
+    url: "https://github.com/nikoskontothanasis/"
+    target: "_blank" # optional html a tag target attribute
+  - name: "Old Home Page"
+    icon: "fas fa-book"
+    url: "http://mac-mini.local/"
+
+# Services
+# First level array represent a group.
+# Leave only a "items" key if not using group (group name, icon & tagstyle are optional, section separation will not be displayed).
+services:
+  - name: "Applications"
+    icon: "fas fa-rocket"
+    items:
+      - name: "Deluge"
+        logo: "https://upload.wikimedia.org/wikipedia/commons/8/85/Deluge-Logo.svg"
+        url: "http://mac-mini.local:8112"
+        subtitle: "for Torrents"
+        tag: "app"
+        type: "PiHole"
+      - name: "Homebridge"
+        logo: "https://raw.githubusercontent.com/homebridge/branding/master/logos/homebridge-color-round-stylized.png"
+        subtitle: "SmartHome"
+        tag: "app"
+        url: "http://mac-mini.local:8581"
+      - name: "PiHole"
+        logo: "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/pihole.png"
+        url: "http://mac-mini.local:8199/admin/"
+        type: "PiHole"
+        tag: "app"
+
+  - name: "Tools"
+    icon: "fas fa-server"
+    items:
+      - name: "MQTT"
+        logo: "https://raw.githubusercontent.com/github/explore/6afe2c43768e7ef1e252839a1f1c12b730faa007/topics/mqtt/mqtt.png"
+        url: "http://mac-mini.local:9000/#/"
+        tag: "server"
+        subtitle: "Expand SmartHome"
+      - name: "Jenkins"
+        logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Jenkins_logo.svg/1200px-Jenkins_logo.svg.png"
+        subtitle: "Automation server"
+        tag: "server"
+        background: "#AC70DD"
+        url: "http://nikoskon.tplinkdns.com:1414"
+        target: "_blank"
+        
